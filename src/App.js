@@ -1,33 +1,18 @@
 import React from "react";
-import Props from "./props";
+import Muluken from "./muluken";
+import Eliyas from "./eliyas";
 
-export default function App(props) {
-  return (
-    <>
-      <div className="container">
-        <div className="row">
-          <Props
-            name="muluken"
-            description="this is my real web site"
-            nickname="dinbicho"
-          />
-          <Props
-            name="fozia"
-            description="this is fozi ALI YIMER FARIS"
-            nickname="jembere"
-          />
-          <Props
-            name="ELIYAS"
-            description="hi eliyas how is everythig goig on in this case "
-            nickname="babiya"
-          />
-          <Props
-            name="ednA"
-            description="EDU HOW ARE u doing my lovely girl"
-            nickname="atutu"
-          />
+const myfunction = "Eliyas";
+export default function App() {
+  
+   return (
+      <>
+        <div className="container">
+          <div className="row">
+            {myfunction === 'Muluken'?<Muluken />:<Eliyas/>}
+          </div>
+          
         </div>
-      </div>
-    </>
-  );
-}
+      </>
+    );
+  } 
